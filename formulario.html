@@ -9,76 +9,77 @@
 <body>
 
 <div>
-<h1>Cadastro de Pacientes</h1>
-<p>Preencha suas informações</p>
+<h1 id="titulo">Cadastro de Pacientes</h1>
+<p id="subtitulo">Preencha suas informações</p>
 <br>
 
 </div>
 
 <form>
-    <fieldset>
+    <fieldset class="grupo">
         <div>
-            <label>Nome</label>
-            <input type="text" name="nome" id="nome">
+            <label for="nome"><strong>Nome</strong></label>
+            <input type="text" name="nome" id="nome" required>
         </div>
 
         <div>
-            <label>Sobrenome</label>
-            <input type="text" name="sobrenome" id="sobrenome">
+            <label for="sobrenome"><strong>Sobrenome</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
         </div>
     </fieldset>
     
     <div>
-        <label>E-mail</label>
-        <input type="email" name="email" id="email">
+        <label for="email"><strong>E-mail</strong></label>
+        <input type="email" name="email" id="email required">
     </div>
 
     <div>
-        <label>Gênero</label>
-        <input type="radio" name="Masculino" value="Sexo"> Masculino
+        <label for="genero"><strong>Gênero</strong></label>
+        <input type="radio" name="Masculino" value="Sexo" required> Masculino
     </label> 
-    <input type="radio" name="Feminino" value="Sexo"> Feminino 
+    <input type="radio" name="Feminino" value="Sexo" required> Feminino 
     </label>
     
     <label>
-        <input type="radio" name="Não definido" value="Não defindo"> Não definido
+        <input type="radio" name="Não definido" value="Não defindo required"> Não definido
     </label>
 
     </div>
     
     <div>
     
-    <label>Telefone</label>
-    <input type="text" name="telefone" id="telefone">
+    <label for="telefone"><strong>Telefone</strong></label>
+    <input type="text" name="telefone" id="telefone required">
 
     </div>
 
     <div>
-        <label>Número do SUS</label>
-        <input type="text" name="numero" id="numero">
+        <label for="numerosus"><strong>Número do SUS</strong></label>
+        <input type="text" name="numero" id="numero required">
     </div>
     
     <div>
-        <label>CPF</label>
-        <input type="text" name="cpf" id="cpf">
+        <label for="cpf"><strong>CPF</strong></label>
+        <input type="text" name="cpf" id="cpf required">
     </div>
     
     <div>
-        <label>RG</label>
-        <input type="text" name="rg" id="rg">
+        <label for="rg"><strong>RG</strong></label>
+        <input type="text" name="rg" id="rg required">
     </div>
 
-    <div>
-        <label>Data da consulta</label>
-        <input id="date" type="date">
+    <div class="campo">
+        <label for="dataconsulta"><strong>Data da consulta</strong></label>
+        <input id="date" type="date" required>
     </div>
+    
     <div>
-        <label>Cidade</label>
-        <input id="cidade" type="cidade">
+        <label for="cidade"><strong>Cidade</strong></label>
+        <input id="cidade" type="cidade" required>
     </div>
-    <fieldset>
+    <fieldset class="grupo">
         <div>
-            <label>Procedimentos realizados</label><br><br>
+            <label for="procedimentosrealizados"><strong>Procedimentos realizados</strong></label><br><br>
         <input type="checkbox" id="sonografia" name="sonografia" value="HTML">Ultra-sonografia abdominal
         </label>
         <input type="checkbox" id="radiografia" name="radiografia"> Radiografia do tórax
@@ -96,8 +97,11 @@
 
     <div>
         <br>
-        <label></label>
+        <label for="observacoes"><strong>Observações</strong></label>
+        <textarea row="6" style="width: 56em" id="obs" name="obs required"></textarea>
     </div>
+
+    <button type="submit">Enviar formulário</button>
 
 
 
