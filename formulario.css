@@ -17,6 +17,11 @@
     font-size: 22px;
 }
 
+#check{
+    display: inline-block;
+}
+
+
 fieldset {
     border: 0;
     margin-left: auto;
@@ -38,7 +43,7 @@ body {
     
 }
 
-input, select, textarea,button {
+input, select, textarea, button {
     border-radius: 6px;
 
 }
@@ -52,7 +57,7 @@ input, select, textarea,button {
     display: block;
 }
 
-fieldset .grupo .campo {
+fieldset.grupo .campo {
     float: left;
     margin-right: 1em;
 }
@@ -62,7 +67,7 @@ fieldset .grupo .campo {
     background-color: silver;
     border: 0;
     margin-bottom: 1em;
-    padding: 0,2em 0.6em;
+    padding: 0.2em 0.6em;
     box-shadow: 2px 2px 2px;
     text-shadow: 1px 1px 1px;
     position: absolute;
@@ -76,6 +81,7 @@ fieldset .grupo .campo {
 .botao:hover {
     background-color: burlywood;
     box-shadow: inset 2px 2px 2px;
+    text-shadow: none;
 
 }
 
@@ -98,11 +104,5 @@ fieldset .grupo .campo {
     margin-top: 0.3%;
  }
 
- 
- #check {
-    display: inline-block;
-
-
- }
 
  
