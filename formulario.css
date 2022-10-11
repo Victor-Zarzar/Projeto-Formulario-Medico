@@ -89,8 +89,10 @@ fieldset.grupo .campo {
  #obs {
     font-size: 10px;
     width: 66%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 50px;
+    margin-inline: 2px;
+    margin-bottom: -10px;
+    
     
     
  }   
@@ -101,7 +103,16 @@ fieldset.grupo .campo {
     position: absolute;
     margin: 3rem 0 0 -3rem;
     width: 50%;
-    margin-top: 0.3%;
+    margin-top: 5px;
+    
+ }
+
+ .autoria {
+    margin-top: 80px;
+    margin-inline: 210px;
+    text-decoration: dashed;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 2px #333;
  }
 
 
